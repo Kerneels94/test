@@ -1,9 +1,9 @@
-# name: End-to-End Tests Workflow
+name: End-to-End Tests Workflow
 
-# on:
-#   push:
-#     branches:
-#       - main  # Adjust this based on your branch name
+on:
+  push:
+    branches:
+      - main  # Adjust this based on your branch name
 
 jobs:
   tests_e2e:
@@ -17,4 +17,4 @@ jobs:
       - name: Install playwright browsers
         run: npx playwright install --with-deps
       - name: Run tests
-        run: npx playwright test
+        run: npm run codeceptjs
