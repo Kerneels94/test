@@ -1,3 +1,10 @@
+name: End-to-End Tests Workflow
+
+on:
+  push:
+    branches:
+      - main  # Adjust this based on your branch name
+
 jobs:
   tests_e2e:
     name: Run end-to-end tests
