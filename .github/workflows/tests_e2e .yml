@@ -42,7 +42,7 @@ jobs:
               repo: context.repo.repo,
               sha: context.sha,
               state: 'failure',
-              target_url: 'http://localhost',  # You can customize the target URL
+              target_url: 'http://localhost:3000/login',  # You can customize the target URL
               description: 'End-to-end tests failed. Push to main branch blocked.',
               context: 'end-to-end-tests'
             });
