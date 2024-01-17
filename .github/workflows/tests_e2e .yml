@@ -28,7 +28,7 @@ jobs:
 
   prevent-push-on-failure:
     name: Prevent push on test failure
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: tests_e2e
     if: ${{ needs.tests_e2e.result == 'Error' }}
     steps:
