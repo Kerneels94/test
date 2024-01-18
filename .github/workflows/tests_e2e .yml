@@ -31,10 +31,10 @@ jobs:
 
       - name: Run tests
         id: run-tests
-        run: npm run codeceptjs:headless
+        run: npm run codeceptjs
   
 
-
+  
 
 
 
