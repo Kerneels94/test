@@ -32,13 +32,6 @@ jobs:
         id: run-tests
         run: npm run codeceptjs
   
-  prevent_push_to_main_and_master:
-    
-    needs: test_code
-    steps:
-      - name: error
-        run: echo "Tests failed as a test did not pass"
-  
 
 
 
