@@ -36,7 +36,8 @@ jobs:
     
     needs: test_code
     steps:
-      run: echo "Tests failed as a test did not pass"
+      - name: error
+        run: echo "Tests failed as a test did not pass"
   
 
 
