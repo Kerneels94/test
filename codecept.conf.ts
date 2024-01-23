@@ -19,5 +19,15 @@ export const config: CodeceptJS.MainConfig = {
   include: {
     I: './steps_file'
   },
-  name: 'testbla'
+  name: 'testbla',
+  reporter: [
+    [
+      "./node_modules/playwright-slack-report/dist/src/SlackReporter.js",
+      {
+        channels: ["tests"], // provide one or more Slack channels
+        sendResults: "always", // "always" , "on-failure", "off"
+      },
+    ],
+    ["dot"], // other reporters
+  ],
 }

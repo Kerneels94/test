@@ -17,6 +17,7 @@
         "@types/node": "^20.11.4",
         "codeceptjs": "^3.5.11",
         "playwright": "^1.41.0",
+        "playwright-slack-report": "^1.1.60",
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3"
     }
